@@ -33,17 +33,15 @@ dependencies:
   flutter:
     sdk: flutter
   fluttertoast: ^8.0.8
+  geocoding: ^2.0.5
+  geolocator: ^9.0.2
   http: ^0.13.5
+  image_cropper: ^3.0.1
+  image_picker: ^0.8.6
   ndialog: ^4.1.0
   shared_preferences: ^2.0.15
 
 dev_dependencies:
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
@@ -58,8 +56,9 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/
+    - assets/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

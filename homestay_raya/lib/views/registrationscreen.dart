@@ -6,7 +6,7 @@ import 'package:homestay_raya/views/userloginscreen.dart';
 import 'package:http/http.dart' as http;
 import 'package:ndialog/ndialog.dart';
 
-import '../config.dart';
+import '../shared/config.dart';
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});

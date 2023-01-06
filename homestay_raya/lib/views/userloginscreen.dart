@@ -1,8 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:homestay_raya/config.dart';
+import 'package:homestay_raya/shared/config.dart';
 import 'package:homestay_raya/models/user.dart';
+import 'package:homestay_raya/shared/mainmenu.dart';
 import 'package:homestay_raya/views/mainscreen.dart';
 import 'package:homestay_raya/views/registrationscreen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -11,6 +12,7 @@ import 'package:http/http.dart' as http;
 
 
 class UserLoginScreen extends StatefulWidget {
+
   const UserLoginScreen({super.key});
 
   @override
@@ -174,7 +176,7 @@ class _UserLoginScreenState extends State<UserLoginScreen> {
         // print(jsonResponse);
         User user = User.fromJson(jsonResponse['data']);
         Navigator.push(context,
-            MaterialPageRoute(builder: (content) =>  const MainScreen()));
+            MaterialPageRoute(builder: (content) =>   MainScreen(user: user,)));
        } else {
         Fluttertoast.showToast(
             msg: "Login Failed",

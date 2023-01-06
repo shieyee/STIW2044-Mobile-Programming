@@ -8,7 +8,7 @@ class User {
       {required this.name,
       required this.email,
       required this.phoneno,
-      required this.address,});
+      required this.address, required String phone,});
 
   User.fromJson(Map<String, dynamic> json) {
     name = json['name'];
@@ -16,6 +16,8 @@ class User {
     phoneno = json['phoneno'];
     address = json['address'];
   }
+
+  get id => null;
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
